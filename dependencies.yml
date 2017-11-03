@@ -1,0 +1,41 @@
+collectors:
+
+- type: php-composer
+  path: 02-link-users
+  actors:
+  # pull requests for updates to our major version
+  - type: php-composer
+    versions: "L.Y.Y"
+  # create issues for new major versions
+  - type: repo-issue
+    versions: "Y.0.0"
+
+- type: php-composer
+  path: 00-Starter-Seed/basic-webapp
+  actors:
+  # pull requests for updates to our major version
+  - type: php-composer
+    versions: "L.Y.Y"
+  # create issues for new major versions
+  - type: repo-issue
+    versions: "Y.0.0"
+
+- type: php-composer
+  path: 00-Starter-Seed/basic-api
+  actors:
+  # pull requests for updates to our major version
+  - type: php-composer
+    versions: "L.Y.Y"
+  # create issues for new major versions
+  - type: repo-issue
+    versions: "Y.0.0"
+
+- type: php-composer
+  path: 01-basic-oauth
+  actors:
+  # pull requests for updates to our major version
+  - type: php-composer
+    versions: "L.Y.Y"
+  # create issues for new major versions
+  - type: repo-issue
+    versions: "Y.0.0"
